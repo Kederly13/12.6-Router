@@ -1,13 +1,13 @@
 
-const Data = prop => {
+const Data = ({data}) => {
     const styleObj = {
         textDecoration: "underline",
         textAlign: "right",
         fontSize: "30px"      
     };
     return (
-        <h3 style={styleObj}>Data: {prop.data}</h3>
+        <h3 style={styleObj}>Data: {data}</h3>
     );
 }
 
-export default Data;
+export { Data };

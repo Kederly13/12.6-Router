@@ -1,8 +1,5 @@
-// import Header from './Header/'
 
-import { hover } from "@testing-library/user-event/dist/hover";
-
-const Bio = props => {
+const Bio = ({name, lastName}) => {
     const styleObj = {
        fontSize : "50px",
        margin : "0",
@@ -14,8 +11,10 @@ const Bio = props => {
     //    },     
     };
     return (
-        <h2 style={styleObj}>Name: {props.name}, Last name: {props.lastName}</h2>
+        <div className="bio">
+            <h2 style={styleObj}>Name: {name}, Last name: {lastName}</h2>
+        </div>
     );
 }
 
-export default Bio;
+export { Bio };

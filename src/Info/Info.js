@@ -26,4 +26,4 @@ const Info = prop => {
 
 }
 
-export default Info;
+export  {Info};

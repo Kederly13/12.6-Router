@@ -1,5 +1,5 @@
-import Data from '../Data/Data.js';
+import {Data} from '../Data/Data.js';
 
-const Footer = props => <Data data = {props.data} />;
+const Footer = ({data}) => <Data data={data} />;
 
-export default Footer;
+export { Footer };

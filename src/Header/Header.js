@@ -1,7 +1,6 @@
-import Bio from '../Bio/Bio.js';
+import {Bio} from '../Bio/Bio.js';
 
-const Header = props => (
-<Bio name = {props.name} lastName = {props.lastName} />
-);
+const Header = ({name, lastName}) => <Bio name = {name} lastName = {lastName} />
 
-export default Header;
+
+export { Header };

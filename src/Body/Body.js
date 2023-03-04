@@ -1,5 +1,5 @@
-import Info from '../Info/Info.js';
+import {Info} from '../Info/Info.js';
 
 const Body = () => <Info/>
 
-export default Body;
+export { Body };
