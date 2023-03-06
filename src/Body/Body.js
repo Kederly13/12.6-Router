@@ -1,5 +1,10 @@
-import {Info} from '../Info/Info.js';
 
-const Body = () => <Info/>
+import { SectionToDo } from './components/SectionToDo/SectionToDo.js';
+
+const Body = () => (
+    <main>
+        <SectionToDo/>
+    </main>
+)
 
 export { Body };

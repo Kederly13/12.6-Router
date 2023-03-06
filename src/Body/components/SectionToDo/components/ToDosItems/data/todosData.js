@@ -8,7 +8,7 @@ const todosData = [
     {
         id: 2,
         text: "brush teeth",
-        completed: true
+        completed: false
     },
     {
         id: 3,
@@ -18,7 +18,7 @@ const todosData = [
     {
         id: 4,
         text: "buy milk",
-        completed: true
+        completed: false
     },
     {
         id: 5,
@@ -27,4 +27,4 @@ const todosData = [
     },
 ]
 
-export {todosData};
+export { todosData };
