@@ -3,7 +3,7 @@ const todosData = [
     {
         id: 1,
         text: "come to school",
-        completed: true
+        completed: false
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const todosData = [
     {
         id: 3,
         text: "fuel up the car",
-        completed: true
+        completed: false
     },
     {
         id: 4,
@@ -23,7 +23,7 @@ const todosData = [
     {
         id: 5,
         text: "learn JS",
-        completed: true
+        completed: false
     },
 ]
 
