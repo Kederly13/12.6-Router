@@ -6,13 +6,19 @@ import { todosData } from './data/todosData.js';
 const ToDosItems = () => {
     const [toDos, setToDos] = useState(todosData);
 
-    const handleChange = id => {
-        const index = toDos.map(item => item.id).indexOf(id);
-        setToDos(toDos => {
-            const toDosItems = [...toDos];
-            toDosItems[index].completed = true;
-            return toDosItems;
-        })
+        const handleChange = id => {
+            const index = toDos.map(item => item.id).indexOf(id);
+            setToDos(prev => 
+                [...prev].map((task) => {
+                if(task.id === id) {
+                    return {
+                        ...task,
+                        completed: !task.completed
+                    }
+                }
+
+            return task;
+        }))
     }
 
     const toDosItems = [...toDos];
