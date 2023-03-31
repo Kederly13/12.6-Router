@@ -11,18 +11,18 @@ h2, p {
 }
 
 .input[type="checkbox"] {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
   }
 
 
 
 .description {
-    font-size: 45px;
+    font-size: 20px;
     color: blue;
 }
 
 
 .title {
-    font-size: 50px;
+    font-size: 25px;
 }

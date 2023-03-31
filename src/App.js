@@ -7,10 +7,7 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <Header
-        name 
-        lastName
-      />
+
       <Body/>
       <Footer
         data = "03/01/23"
