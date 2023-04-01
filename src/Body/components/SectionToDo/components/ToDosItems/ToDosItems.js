@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import { ToDoItem } from './components/ToDoItem/ToDoItem.js';
 import { todosData } from './data/todosData.js';
 
@@ -8,8 +7,7 @@ const ToDosItems = () => {
 
         const handleChange = id => {
             const index = toDos.map(item => item.id).indexOf(id);
-            setToDos(prev => 
-                [...prev].map((task) => {
+            setToDos(prev => [...prev].map((task) => {
                 if(task.id === id) {
                     return {
                         ...task,
@@ -22,7 +20,6 @@ const ToDosItems = () => {
     }
 
     const toDosItems = [...toDos];
-
     const activeTasks = toDosItems.filter(({completed}) => !completed)
     const completedTasks = toDosItems.filter(({completed}) => completed)
 
